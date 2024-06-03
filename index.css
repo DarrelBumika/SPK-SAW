@@ -128,3 +128,43 @@
 .bg-primary-border {
     background: #AD97E0;
 }
+
+
+.background-dark-purple{
+    background-color: #3A1F79;
+    height: 100vh;
+    margin: 0;
+}
+
+.picture{
+    width: 347px;
+    height: 282px;
+    padding: 35px 0px;
+}
+.btn-white {
+    background-color: #DED5F3;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 36px;
+}
+
+.item-center {
+    margin: auto;
+    display: block;
+}
+  
+.centered-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+div > p {
+    color: #DED5F3;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-align: center;
+
+}
