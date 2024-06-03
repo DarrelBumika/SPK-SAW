@@ -108,7 +108,6 @@
     font-style: italic;
 }
 
-
 .text-s {
     font-size: 12px;
 }
@@ -129,6 +128,13 @@
     background: #AD97E0;
 }
 
+.bg-primary-surface {
+    background: #DED5F3;
+}
+
+.border-primary-main {
+    border-color: #5C2FC2;
+}
 
 .background-dark-purple{
     background-color: #3A1F79;
@@ -152,7 +158,7 @@
     margin: auto;
     display: block;
 }
-  
+
 .centered-element {
     display: flex;
     justify-content: center;
