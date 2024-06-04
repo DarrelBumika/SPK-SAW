@@ -33,7 +33,7 @@
                 <div class="w-auto h-auto flex flex-col rounded-[20px] overflow-hidden border border-primary-border">
                     <div class="w-auto h-[75px] flex bg-primary-main">
                         <div class="w-[60px] h-full border-r border-primary-border font-poppins font-semibold text-base text-white flex justify-center items-center">No.</div>
-                        <div class="w-[285px] h-full border-r border-primary-border font-poppins font-semibold text-base text-white flex justify-center items-center">Alternaltif</div>
+                        <div class="w-[285px] h-full border-r border-primary-border font-poppins font-semibold text-base text-white flex justify-center items-center">Alternatif</div>
                         <div class="w-auto h-full flex flex-col">
                             <div class="w-auto h-[38px] font-poppins font-semibold text-base text-white flex justify-center items-center">Kode Kriteria</div>
                             <div class="w-auto h-[37px] flex border-t border-primary-border bg-primary-hover">
@@ -87,7 +87,7 @@
                 <div class="w-auto h-auto flex flex-col rounded-[20px] overflow-hidden border border-primary-border">
                     <div class="w-auto h-[75px] flex bg-primary-main">
                         <div class="w-[60px] h-full border-r border-primary-border font-poppins font-semibold text-base text-white flex justify-center items-center">No.</div>
-                        <div class="w-[285px] h-full border-r border-primary-border font-poppins font-semibold text-base text-white flex justify-center items-center">Alternaltif</div>
+                        <div class="w-[285px] h-full border-r border-primary-border font-poppins font-semibold text-base text-white flex justify-center items-center">Alternatif</div>
                         <div class="w-auto h-full flex flex-col">
                             <div class="w-auto h-[38px] font-poppins font-semibold text-base text-white flex justify-center items-center">Kode Kriteria</div>
                             <div class="w-auto h-[37px] flex border-t border-primary-border bg-primary-hover">
@@ -154,7 +154,7 @@
                 <div class="w-auto h-auto flex flex-col rounded-[20px] overflow-hidden border border-primary-border">
                     <div class="w-auto h-[37px] flex bg-primary-main">
                         <div class="w-[60px] h-full border-r border-primary-border font-poppins font-semibold text-base text-white flex justify-center items-center">No.</div>
-                        <div class="w-[285px] h-full border-r border-primary-border font-poppins font-semibold text-base text-white flex justify-center items-center">Alternaltif</div>
+                        <div class="w-[285px] h-full border-r border-primary-border font-poppins font-semibold text-base text-white flex justify-center items-center">Alternatif</div>
                         <div class="w-[155px] h-full border-r border-primary-border font-poppins font-semibold text-base text-white flex justify-center items-center">Rangking</div>
                     </div>
                     <div class="w-auto h-auto flex flex-col">
