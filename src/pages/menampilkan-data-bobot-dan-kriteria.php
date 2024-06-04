@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../output.css">
 </head>
 <body class="py-10">
     <div>
@@ -13,19 +13,19 @@
     <div class="mx-20">
         <div class="flex py-5">
             <div class="bg-[#DED5F3] mx-2 grow rounded-3xl items-center flex ">
-                <button class="mx-3">
+                <a class="mx-3" href="../index.php">
                     <div> Home</div>
-                </button>
+                </a>
                 /
-                <button class="mx-3">
+                <a class="mx-3" href="./sequence.php">
                     <div>Langkah</div>
-                </button>
+                </a>
                 /
                 <div class="mx-3"> Data Bobot dan Kriteria </div>
 
             </div>
             <div class="bg-[#4D27A2] mx-2 w-20 h-10 rounded-3xl items-center text-white flex">
-                <div class="grow text-center font-poppins font-semibold">1/3</div>
+                <div class="grow text-center font-poppins font-semibold">1 / 3</div>
             </div>
         </div>
         <div class="flex mx-3">
@@ -108,8 +108,8 @@
             </div>
             <div class="flex">
                 <div class="grow"></div>
-                <button class="bg-[#DED5F3] hover:bg-violet-300 w-24 h-8 mx-5 rounded-3xl font-poppins">Kembali</button>
-                <button class="bg-[#4D27A2] hover:bg-violet-950 w-24 h-8 rounded-3xl  text-white font-poppins">Lanjut</button>
+                <a class="bg-[#DED5F3] flex justify-center items-center hover:bg-violet-300 w-24 h-8 mx-5 rounded-3xl font-poppins" href="./input_data_kriteria.php">Kembali</a>
+                <a class="bg-[#4D27A2] flex justify-center items-center hover:bg-violet-950 w-24 h-8 rounded-3xl  text-white font-poppins" href="./input_data_alternatif.php">Lanjut</a>
             </div>
 
         </div>

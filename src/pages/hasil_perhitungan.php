@@ -14,9 +14,9 @@
             <div class="w-auto h-10 flex gap-3">
                 <div class="w-[1046px] h-full bg-primary-surface rounded-[20px] flex items-center px-6">
                     <p href="" class="font-poppins font-normal text-sm text-primary-main">
-                        <a href="">Home</a>
+                        <a href="../index.php">Home</a>
                         <span class="font-poppins font-normal text-sm text-black">/</span>
-                        <a href="">Langkah</a>
+                        <a href="./sequence.php">Langkah</a>
                         <span class="font-poppins font-normal text-sm text-black">/</span>
                         <a href="" class="text-black">Menampilkan Hasil Perhitungan</a>
                     </p>
@@ -178,8 +178,8 @@
         </div>
 
         <div class="flex gap-4">
-            <button class="w-auto h-[40px] px-10 bg-primary-surface rounded-full font-poppins font-normal text-sm text-black">Kembali</button>
-            <button class="w-auto h-[40px] px-10 bg-primary-main rounded-full font-poppins font-normal text-sm text-white">Selesai</button>
+            <a class="w-auto h-[40px] flex items-center hover:cursor-pointer px-10 bg-primary-surface rounded-full font-poppins font-normal text-sm text-black" href="./input_data_alternatif.php">Kembali</a>
+            <a class="w-auto h-[40px] flex items-center hover:cursor-pointer px-10 bg-primary-main rounded-full font-poppins font-normal text-sm text-white" href="./hasil_akhir.php">Selesai</a>
         </div>
         
     </div>

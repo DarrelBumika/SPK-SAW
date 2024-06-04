@@ -53,7 +53,7 @@
             </div>
             <div class="w-full h-[440px] bg-primary-surface rounded-[20px] translate-x-3 translate-y-3 absolute -z-10"></div>
         </div>
-        <button class="w-[228px] h-[40px] bg-primary-main rounded-full font-poppins font-semibold text-base text-white">Mulai Perhitungan</button>
+        <a class="w-[228px] h-[40px] flex justify-center items-center hover:cursor-pointer ease-in-out transition-all hover:w-[258px] bg-primary-main rounded-full font-poppins font-semibold text-base text-white" href="./input_data_kriteria.php">Mulai Perhitungan</a>
     </div>
 </div>
 
