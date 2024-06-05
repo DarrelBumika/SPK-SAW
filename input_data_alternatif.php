@@ -77,7 +77,7 @@
                             <div class="w-[60px] h-full border-r border-primary-border font-poppins font-semibold text-base text-white flex justify-center items-center">No.</div>
                             <div class="w-[285px] h-full border-r border-primary-border font-poppins font-semibold text-base text-white flex justify-center items-center">Alternatif</div>
                             <div class="w-auto h-full flex flex-col">
-                                <div class="w-auto h-[38px] font-poppins font-semibold text-base text-white flex justify-center items-center">Kode Kriteria</div>
+                                <div class="w-auto h-[38px] font-poppins font-semibold text-base text-white flex justify-center items-center border-r border-primary-border">Kode Kriteria</div>
                                 <div class="w-auto h-[37px] flex border-t border-primary-border bg-primary-hover">
                                     <?php 
                                         $data_kriteria = mysqli_query($koneksi,"SELECT * FROM kriteria");
@@ -89,6 +89,7 @@
                                     ?>
                                 </div>
                             </div>
+                            <div class="w-[100px] h-full border-r border-primary-border font-poppins font-semibold text-base text-white flex justify-center items-center">Option</div>
                         </div>
                         <div class="w-auto h-auto flex flex-col">
                             <?php 
@@ -112,6 +113,7 @@
                                         }
                                     ?>
                                 </div>
+                                <a class="w-[100px] h-[37px] flex justify-center items-center border-r border-primary-border font-poppins font-semibold text-base cursor-pointer text-white bg-red-500" href="./database/delete_alternatif.php?id_alternatif=<?php echo $alternatif['id_alternatif']?>"> X </a>
                             </div>
                             <?php
                                 }

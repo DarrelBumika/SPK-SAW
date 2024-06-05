@@ -63,6 +63,7 @@
                             <div class="w-[100px] h-full border-r border-primary-border font-poppins font-semibold text-base text-white flex justify-center items-center">Kode</div>
                             <div class="w-[285px] h-full border-r border-primary-border font-poppins font-semibold text-base text-white flex justify-center items-center">Bobot</div>
                             <div class="w-[285px] h-full border-r border-primary-border font-poppins font-semibold text-base text-white flex justify-center items-center">Cost/Benefit</div>
+                            <div class="w-[100px] h-full border-r border-primary-border font-poppins font-semibold text-base text-white flex justify-center items-center">Option</div>
                         </div>
                         <div class="w-auto h-auto flex flex-col">
                             <?php 
@@ -75,10 +76,11 @@
                             ?>
                             <div class="w-auto h-[37px] flex border-t border-primary-border bg-<?php echo $color?>">
                                 <div class="w-[60px] h-full flex justify-center items-center border-r border-primary-border font-poppins font-semibold text-base bg-<?php echo $color?>"><?php echo $i?></div>
-                                <div class="w-[285px] h-full flex justify-center items-center border-r border-primary-border font-poppins font-semibold  text-base bg-<?php echo $color?>"><?php echo $kriteria['nama_kriteria']?></div>
-                                <div class="w-[100px] h-full flex justify-center items-center border-r border-primary-border font-poppins font-semibold  text-base bg-<?php echo $color?>"><?php echo $kriteria['kode_kriteria']?></div>
-                                <div class="w-[285px] h-full flex justify-center items-center border-r border-primary-border font-poppins font-semibold  text-base bg-<?php echo $color?>"><?php echo $kriteria['bobot_kriteria']?></div>
-                                <div class="w-[285px] h-full flex justify-center items-center border-r border-primary-border font-poppins font-semibold  text-base bg-<?php echo $color?>"><?php echo $kriteria['cost_benefit'] == "C" ? "COST" : "BENEFIT"?></div>
+                                <div class="w-[285px] h-full flex justify-center items-center border-r border-primary-border font-poppins font-semibold text-base bg-<?php echo $color?>"><?php echo $kriteria['nama_kriteria']?></div>
+                                <div class="w-[100px] h-full flex justify-center items-center border-r border-primary-border font-poppins font-semibold text-base bg-<?php echo $color?>"><?php echo $kriteria['kode_kriteria']?></div>
+                                <div class="w-[285px] h-full flex justify-center items-center border-r border-primary-border font-poppins font-semibold text-base bg-<?php echo $color?>"><?php echo $kriteria['bobot_kriteria']?></div>
+                                <div class="w-[285px] h-full flex justify-center items-center border-r border-primary-border font-poppins font-semibold text-base bg-<?php echo $color?>"><?php echo $kriteria['cost_benefit'] == "C" ? "COST" : "BENEFIT"?></div>
+                                <a class="w-[100px] h-full flex justify-center items-center border-r border-primary-border font-poppins font-semibold text-base cursor-pointer text-white bg-red-500" href="./database/delete_kriteria.php?id_kriteria=<?php echo $kriteria['id_kriteria']?>"> X </a>
                             </div>
                             <?php
                                 }
