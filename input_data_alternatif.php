@@ -127,9 +127,9 @@
                     <a class="w-[100px] h-full bg-primary-surface rounded-[20px] flex justify-center items-center hover:cursor-pointer" href="./input_data_kriteria.php">
                         <p class="font-poppins text-base font-normal">Kembali</p>
                     </a>
-                    <a class="w-[100px] h-full bg-primary-main rounded-[20px] flex justify-center items-center hover:cursor-pointer" href="./hasil_perhitungan.php">
-                        <p class="font-poppins text-base text-white font-normal">Lanjut</p>
-                    </a>
+                    <form action="./database/input_alternatif_next.php" class="font-poppins text-base text-white font-normal">
+                    <input type="submit" class="w-[100px] h-full bg-primary-main rounded-[20px] flex justify-center items-center hover:cursor-pointer" href="./hasil_perhitungan.php" value="Lanjut">
+                    </form>
                 </div>
             </div>
         </div>
