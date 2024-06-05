@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>SPK - SAW</title>
-    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="./src/output.css">
 <body>
     <div class="w-full h-full flex justify-center items-center pt-20 pb-10">
 
@@ -13,14 +13,14 @@
                 <div class="w-auto h-10 flex gap-3">
                     <div class="w-[1046px] h-full bg-primary-surface rounded-[20px] flex items-center px-6">
                         <p href="" class="font-poppins font-normal text-sm text-primary-main">
-                            <a href="../index.php">Home</a>
+                            <a href="./index.php">Home</a>
                             <span class="font-poppins font-normal text-sm text-black">/</span>
                             <a href="./sequence.php">Langkah</a>
                             <span class="font-poppins font-normal text-sm text-black">/</span>
                             <a href="" class="text-black">Memasukkan Jumlah Alternatif</a>
                         </p>
                     </div>
-                    <div class="w-20 h-full flex items-center justify-center bg-primary-main rounded-[20px] font-poppins font-semibold text-base text-white">3 / 3</div>
+                    <div class="w-20 h-full flex items-center justify-center bg-primary-main rounded-[20px] font-poppins font-semibold text-base text-white">2 / 3</div>
                 </div>
             </div>
 
@@ -66,8 +66,8 @@
                     </div>
                 </div>
                 <div class="w-full h-20 flex justify-end py-5 gap-5">
-                    <a class="w-auto h-full bg-primary-border rounded-[20px] flex justify-center items-center hover:cursor-pointer" href="../index.php">
-                        <img src="../../src/images/home.svg" alt="">
+                    <a class="w-auto h-full bg-primary-border rounded-[20px] flex justify-center items-center hover:cursor-pointer" href="./index.php">
+                        <img src="./src/images/home.svg" alt="">
                     </a>
                     <a class="w-[100px] h-full bg-primary-surface rounded-[20px] flex justify-center items-center hover:cursor-pointer" href="./menampilkan-data-bobot-dan-kriteria.php">
                         <p class="font-poppins text-base font-normal">Kembali</p>

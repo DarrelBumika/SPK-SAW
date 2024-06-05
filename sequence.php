@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>SPK - SAW</title>
-    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
 <div class="w-screen h-screen flex justify-center items-center">
@@ -15,7 +15,7 @@
                     <div class="w-9 h-9 rounded-full bg-white flex justify-center items-center border border-primary-main absolute -translate-y-1/2">1</div>
                     <div class="w-full h-full rounded-[20px] bg-primary-main flex flex-col justify-end overflow-hidden">
                         <div class="w-full h-[252px] flex justify-center items-center">
-                            <img src="../../src/images/sequence-1.svg" alt="">
+                            <img src="./src/images/sequence-1.svg" alt="">
                         </div>
                         <div class="w-full h-[93px] bg-white flex justify-center items-center p-5">
                             <p class="font-poppins text-xs font-normal text-black text-center">
@@ -28,7 +28,7 @@
                     <div class="w-9 h-9 rounded-full bg-white flex justify-center items-center border border-primary-main absolute -translate-y-1/2">2</div>
                     <div class="w-full h-full rounded-[20px] bg-white flex flex-col justify-end overflow-hidden">
                         <div class="w-full h-[252px] flex justify-center items-center">
-                            <img src="../../src/images/sequence-2.svg" alt="">
+                            <img src="./src/images/sequence-2.svg" alt="">
                         </div>
                         <div class="w-full h-[93px] bg-primary-main flex justify-center items-center p-5">
                             <p class="font-poppins text-xs font-normal text-white text-center">
@@ -41,7 +41,7 @@
                     <div class="w-9 h-9 rounded-full bg-white flex justify-center items-center border border-primary-main absolute -translate-y-1/2">3</div>
                     <div class="w-full h-full rounded-[20px] bg-primary-main flex flex-col justify-end overflow-hidden">
                         <div class="w-full h-[252px] flex justify-center items-center">
-                            <img src="../../src/images/sequence-3.svg" alt="">
+                            <img src="./src/images/sequence-3.svg" alt="">
                         </div>
                         <div class="w-full h-[93px] bg-white flex justify-center items-center p-5">
                             <p class="font-poppins text-xs font-normal text-black text-center">

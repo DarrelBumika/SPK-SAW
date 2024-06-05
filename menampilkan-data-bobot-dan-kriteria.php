@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="./src/output.css">
 </head>
 <body class="py-10">
     <div>
@@ -13,7 +13,7 @@
     <div class="mx-20">
         <div class="flex py-5">
             <div class="bg-[#DED5F3] mx-2 grow rounded-3xl items-center flex ">
-                <a class="mx-3" href="../index.php">
+                <a class="mx-3" href="./index.php">
                     <div> Home</div>
                 </a>
                 /
