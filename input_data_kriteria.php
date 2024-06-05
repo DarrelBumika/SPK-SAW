@@ -5,8 +5,9 @@
     <title>SPK - SAW</title>
     <link rel="stylesheet" href="./src/output.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
 <body>
-    <div class="w-svw h-svh flex justify-center items-center relative">
+    <div class="w-full h-full flex justify-center items-center pt-20 pb-10">
         <div class="w-auto h-auto flex flex-col gap-10 items-center">
             <div class="w-auto h-auto flex flex-col gap-10 items-center sticky">
                 <p class="font-poppins font-semibold text-[27px] text-black text-center">Menentukan Kriteria</p>
@@ -25,12 +26,12 @@
             </div>
 
             <div class="w-auto h-auto flex flex-col">
-                <p class="w-full border-b-2 py-5 font-poppins font-normal text-start text-base text-black"><span class="font-semibold">Langkah 1.</span> Masukkan Kriteria</p>
-                <div class="border-b-2 py-5 flex flex-col gap-5">
+                <p class="w-auto border-b-2 py-5 font-poppins font-normal text-start text-base text-black"><span class="font-semibold">Langkah 1.</span> Masukkan Kriteria</p>
+                <div class="h-auto border-b-2 py-5 flex flex-col gap-5">
                     <div class="h-4 flex justify-start items-center gap-5">
                         <p class="font-poppins font-normal text-black">Masukkan Jumlah Kriteria</p>
                         <div class="rounded-lg overflow-hidden border border-[#B8B8B8]">
-                            <select name="options" id="options" class="w-full px-3 hover:cursor-pointer">
+                            <select name="jumKriteria" id="jumKriteria" class="w-full px-3 hover:cursor-pointer">
                                 <option value="1" class="font-poppins">1</option>
                                 <option value="2" class="font-poppins">2</option>
                                 <option value="3" class="font-poppins">3</option>
@@ -44,23 +45,27 @@
                             </select>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-5" id="input_form">
-                        <div class="flex gap-10 items-center">
+                    <div class="h-auto flex flex-col gap-5" id="input_form">
+                        <div class="h-auto flex gap-10 items-center">
                             <div class="flex items-center gap-5">
                                 <p class="w-auto h-6 font-poppins font-normal text-base text-black">Masukkan Kriteria</p>
-                                <input type="text" class="w-[220px] h-6 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
+                                <input type="text" class="w-[220px] h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
                             </div>
                             <div class="flex items-center gap-5">
                                 <p class="w-auto h-6 font-poppins font-normal text-base text-black">Nilai Kriteria</p>
-                                <input type="text" class="w-20 h-6 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
+                                <input type="text" class="w-20 h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
                             </div>
                             <div class="flex items-center gap-5">
                                 <p class="w-auto h-6 font-poppins font-normal text-base text-black">Cost/Benefit</p>
-                                <input type="text" class="w-20 h-6 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
+                                <select name="costOrBenefit" id="costOrBenefit" class="w-25 h-10 hover:cursor-pointer px-3 border border-zinc-400 rounded-lg">
+                                    <option value="1" class="font-poppins font-normal text-base text-black">Cost</option>
+                                    <option value="2" class="font-poppins font-normal text-base text-black">Benefit</option>
+                                </select>
+                            </select>
                             </div>
                             <div class="flex items-center gap-5">
                                 <p class="w-auto h-6 font-poppins font-normal text-base text-black">Nilai Bobot</p>
-                                <input type="text" class="w-20 h-6 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
+                                <input type="text" class="w-20 h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
                             </div>
                         </div>
                     </div>
@@ -81,25 +86,29 @@
     </div>
 <script>
     $(function() {
-        $('select').change(function() {
+        $('#jumKriteria').change(function() {
             $('#input_form').html('');
             for (var i = 0; i<parseInt($(this).val()); i++) {
                 var row = '<div class="flex gap-10 items-center">\
                                 <div class="flex items-center gap-5">\
                                     <p class="w-auto h-6 font-poppins font-normal text-base text-black">Masukkan Kriteria</p>\
-                                    <input type="text" class="w-[220px] h-6 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">\
+                                    <input type="text" class="w-[220px] h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">\
                                 </div>\
                                 <div class="flex items-center gap-5">\
                                     <p class="w-auto h-6 font-poppins font-normal text-base text-black">Nilai Kriteria</p>\
-                                    <input type="text" class="w-20 h-6 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">\
+                                    <input type="text" class="w-20 h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">\
                                 </div>\
                                 <div class="flex items-center gap-5">\
                                     <p class="w-auto h-6 font-poppins font-normal text-base text-black">Cost/Benefit</p>\
-                                    <input type="text" class="w-20 h-6 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">\
+                                    <select name="costOrBenefit" id="costOrBenefit" class="w-25 h-10 hover:cursor-pointer px-3 border border-zinc-400 rounded-lg">\
+                                        <option value="1" class="font-poppins">Cost</option>\
+                                        <option value="2" class="font-poppins">Benefit</option>\
+                                    </select>\
+                                </select>\
                                 </div>\
                                 <div class="flex items-center gap-5">\
                                     <p class="w-auto h-6 font-poppins font-normal text-base text-black">Nilai Bobot</p>\
-                                    <input type="text" class="w-20 h-6 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">\
+                                    <input type="text" class="w-20 h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">\
                                 </div>\
                             </div>';
                 row = $(row);
