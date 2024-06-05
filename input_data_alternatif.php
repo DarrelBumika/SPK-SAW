@@ -32,7 +32,7 @@
             <div class="w-full h-auto flex flex-col">
                 <p class="w-full border-b-2 py-5 font-poppins font-normal text-start text-base text-black"><span class="font-semibold">Langkah 2.</span> Memasukkan Jumlah Alternatif</p>
                 <div class="flex flex-col justify-center items-center border-b-2 py-5 gap-5">
-                    <div class="w-fit flex gap-5">
+                    <form class="w-fit flex gap-5" action="./database/insert_alternatif.php">
                         <div class="w-fit flex flex-col gap-3">
                             <div class="flex gap-5 justify-end">
                                 <?php 
@@ -49,14 +49,14 @@
                                 <div class="flex gap-5 items-center">
                                     <div class="flex items-center gap-5">
                                         <p class="w-auto h-6 font-poppins font-normal text-base text-black">Masukkan Alternatif</p>
-                                        <input type="text" class="w-[220px] h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
+                                        <input name="nama_alternatif" type="text" class="w-[220px] h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
                                     </div>
                                     <?php 
                                         $data_kriteria = mysqli_query($koneksi,"SELECT * FROM kriteria");
-                                        for ($i = 0; $i < mysqli_num_rows($data_kriteria); $i++) {
+                                        while ($kriteria = mysqli_fetch_array($data_kriteria)) {
                                     ?>
                                     <div class="flex items-center gap-5">
-                                        <input type="text" class="w-20 h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
+                                        <input name="nilai_<?php echo $kriteria['id_kriteria']?>" type="text" class="w-20 h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
                                     </div>
                                     <?php
                                         }
@@ -68,7 +68,7 @@
                         <div class="flex items-end">
                             <input type="submit" value="Add" class="h-10 w-20 flex justify-center hover:cursor-pointer rounded-[20px] bg-primary-main font-poppins font-semibold text-white">
                         </div>
-                    </div>
+                    </form>
                 </div>
 
                 <div class="w-full border-b-2 py-5 flex justify-center items-center gap-5">

@@ -29,29 +29,29 @@
             <div class="w-full h-auto flex flex-col">
                 <p class="w-auto border-b-2 py-5 font-poppins font-normal text-start text-base text-black"><span class="font-semibold">Langkah 1.</span> Masukkan Kriteria</p>
                 <div class="h-auto border-b-2 py-5 flex flex-col gap-5">
-                    <div class="h-auto flex flex-col gap-5">
-                        <div class="h-auto flex gap-8 items-center">
+                    <div class="h-auto flex flex-col justify-center items-center gap-5">
+                        <form class="h-auto flex gap-8 items-center" action="./database/insert_kriteria.php">
                             <div class="flex items-center gap-5">
                                 <p class="w-auto h-6 font-poppins font-normal text-base text-black">Masukkan Kriteria</p>
-                                <input type="text" class="w-[220px] h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
+                                <input name="nama_kriteria" type="text" class="w-[220px] h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
                             </div>
                             <div class="flex items-center gap-5">
-                                <p class="w-auto h-6 font-poppins font-normal text-base text-black">Nilai Kriteria</p>
-                                <input type="text" class="w-20 h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
+                                <p class="w-auto h-6 font-poppins font-normal text-base text-black">Kode Kriteria</p>
+                                <input name="kode_kriteria" type="text" class="w-20 h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
                             </div>
                             <div class="flex items-center gap-5">
                                 <p class="w-auto h-6 font-poppins font-normal text-base text-black">Cost/Benefit</p>
                                 <select name="costOrBenefit" id="costOrBenefit" class="w-25 h-10 hover:cursor-pointer px-3 border border-zinc-400 rounded-lg">
-                                    <option value="1" class="font-poppins font-normal text-base text-black">Cost</option>
-                                    <option value="2" class="font-poppins font-normal text-base text-black">Benefit</option>
+                                    <option value="C" class="font-poppins font-normal text-base text-black">Cost</option>
+                                    <option value="B" class="font-poppins font-normal text-base text-black">Benefit</option>
                                 </select>
                             </div>
                             <div class="flex items-center gap-5">
                                 <p class="w-auto h-6 font-poppins font-normal text-base text-black">Nilai Bobot</p>
-                                <input type="text" class="w-20 h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
+                                <input name="nilai_bobot" type="text" class="w-20 h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
                             </div>
                             <input type="submit" value="Add" class="h-10 w-20 flex justify-center hover:cursor-pointer rounded-[20px] bg-primary-main font-poppins font-semibold text-white">
-                        </div>
+                        </form>
                     </div>
                 </div>
 
@@ -60,6 +60,7 @@
                         <div class="w-auto h-[37px] flex bg-primary-main">
                             <div class="w-[60px] h-full border-r border-primary-border font-poppins font-semibold text-base text-white flex justify-center items-center">No.</div>
                             <div class="w-[285px] h-full border-r border-primary-border font-poppins font-semibold text-base text-white flex justify-center items-center">Kriteria</div>
+                            <div class="w-[100px] h-full border-r border-primary-border font-poppins font-semibold text-base text-white flex justify-center items-center">Kode</div>
                             <div class="w-[285px] h-full border-r border-primary-border font-poppins font-semibold text-base text-white flex justify-center items-center">Bobot</div>
                             <div class="w-[285px] h-full border-r border-primary-border font-poppins font-semibold text-base text-white flex justify-center items-center">Cost/Benefit</div>
                         </div>
@@ -73,10 +74,11 @@
                                     $i++;
                             ?>
                             <div class="w-auto h-[37px] flex border-t border-primary-border bg-<?php echo $color?>">
-                                <div class="w-[60px] h-full flex justify-center items-center border-r border-primary-border font-poppins font-normal text-base bg-<?php echo $color?>"><?php echo $i?></div>
-                                <div class="w-[285px] h-full flex justify-center items-center border-r border-primary-border font-poppins font-normal text-base bg-<?php echo $color?>"><?php echo $kriteria['nama_kriteria']?></div>
-                                <div class="w-[285px] h-full flex justify-center items-center border-r border-primary-border font-poppins font-normal text-base bg-<?php echo $color?>"><?php echo $kriteria['bobot_kriteria']?></div>
-                                <div class="w-[285px] h-full flex justify-center items-center border-r border-primary-border font-poppins font-normal text-base bg-<?php echo $color?>"><?php echo $kriteria['cost_benefit'] == "C" ? "COST" : "BENEFIT"?></div>
+                                <div class="w-[60px] h-full flex justify-center items-center border-r border-primary-border font-poppins font-semibold text-base bg-<?php echo $color?>"><?php echo $i?></div>
+                                <div class="w-[285px] h-full flex justify-center items-center border-r border-primary-border font-poppins font-semibold  text-base bg-<?php echo $color?>"><?php echo $kriteria['nama_kriteria']?></div>
+                                <div class="w-[100px] h-full flex justify-center items-center border-r border-primary-border font-poppins font-semibold  text-base bg-<?php echo $color?>"><?php echo $kriteria['kode_kriteria']?></div>
+                                <div class="w-[285px] h-full flex justify-center items-center border-r border-primary-border font-poppins font-semibold  text-base bg-<?php echo $color?>"><?php echo $kriteria['bobot_kriteria']?></div>
+                                <div class="w-[285px] h-full flex justify-center items-center border-r border-primary-border font-poppins font-semibold  text-base bg-<?php echo $color?>"><?php echo $kriteria['cost_benefit'] == "C" ? "COST" : "BENEFIT"?></div>
                             </div>
                             <?php
                                 }

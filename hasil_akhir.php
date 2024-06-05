@@ -13,7 +13,9 @@
             <p class="font-poppins font-extrabold text-xl">Horray Selamat Kamu Telah</p>
             <p class="font-poppins font-extrabold text-xl">Menyelesaikan Perhitungan SAW</p>
             <img class="picture item-center" src="./src/images/Group 8.png" alt="">
-            <a class="w-fit h-[40px] flex items-center hover:cursor-pointer px-10 bg-primary-surface rounded-full font-poppins font-normal text-sm text-black" href="./index.php">Home</a>
+            <form action="./database/clear.php">
+            <input type="submit" class="w-fit h-[40px] flex items-center hover:cursor-pointer px-10 bg-primary-surface rounded-full font-poppins font-normal text-sm text-black" href="./index.php" value="Home">
+            </form>
         </div>
     </div>
 </body>
