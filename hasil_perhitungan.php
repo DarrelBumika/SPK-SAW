@@ -18,7 +18,7 @@
             <div class="w-full h-10 flex gap-3">
                 <div class="w-[1108px] h-full bg-primary-surface rounded-[20px] flex items-center px-6">
                     <p href="" class="font-poppins font-normal text-sm text-primary-main">
-                        <a href="./index.php">Home</a>
+                        <a href="./sequence.php">Home</a>
                         <span class="font-poppins font-normal text-sm text-black">/</span>
                         <a href="./sequence.php">Langkah</a>
                         <span class="font-poppins font-normal text-sm text-black">/</span>
@@ -33,7 +33,7 @@
 
             <!-- tabel 1 -->
             <div class="w-auto h-auto flex flex-col gap-7 pt-5">
-                <p class="w-auto font-poppins font-normal text-start text-base text-black"><span class="font-semibold">Langkah 3.</span> Menampilkan Hasil Perhitungan Kriteria</p>
+                <p class="w-auto font-poppins font-normal text-start text-base text-black"><span class="font-semibold">Langkah 3.</span> Menampilkan Nilai Min/Max Tiap Kriteria</p>
                 
                 <div class="w-full flex justify-center items-center">
                     <div class="w-fit self-center h-auto flex flex-col rounded-[20px] overflow-hidden border border-primary-border">
@@ -159,7 +159,7 @@
                                         $data_kriteria = mysqli_query($koneksi,'SELECT * FROM kriteria');
                                         while ($kriteria = mysqli_fetch_array($data_kriteria)) {
                                     ?>
-                                    <div class="w-[67px] h-full border-r border-primary-border font-poppins font-semibold text-base text-white flex justify-center items-center"><?php echo $kriteria['bobot_kriteria'] * 100?></div>
+                                    <div class="w-[67px] h-full border-r border-primary-border font-poppins font-semibold text-base text-white flex justify-center items-center"><?php echo $kriteria['bobot_kriteria'] * 100?>%</div>
                                     <?php
                                         }
                                     ?>
@@ -188,7 +188,7 @@
 
             <!-- tabel 3 -->
             <div class="w-auto h-auto flex flex-col gap-7 pt-5 border-t-2">
-                <p class="w-auto font-poppins font-normal text-start text-base text-black"><span class="font-semibold">Langkah 4.</span> Menampilkan Hasil Perhitungan Normalisasi</p>
+                <p class="w-auto font-poppins font-normal text-start text-base text-black"><span class="font-semibold">Langkah 5.</span> Menampilkan Hasil Perkalian Normalisasi</p>
                 
                 <div class="w-full flex justify-center items-center">
                     <div class="w-auto h-auto flex flex-col rounded-[20px] overflow-hidden border border-primary-border">
@@ -251,7 +251,7 @@
             </div>
 
             <div class="w-auto h-auto flex flex-col gap-7 pt-5 border-t-2">
-                <p class="w-auto font-poppins font-normal text-start text-base text-black"><span class="font-semibold">Langkah 5.</span> Menampilkan Hasil Perhitungan Ranking</p>
+                <p class="w-auto font-poppins font-normal text-start text-base text-black"><span class="font-semibold">Langkah 6.</span> Menampilkan Hasil Perhitungan Ranking</p>
                 
                 <div class="w-full flex justify-center items-center">
                     <div class="w-auto h-auto flex flex-col rounded-[20px] overflow-hidden border border-primary-border">
@@ -285,9 +285,6 @@
         </div>
 
         <div class="w-full flex gap-4 pt-5 border-t-2 justify-end">
-            <a class="w-auto h-full bg-primary-border rounded-[20px] flex justify-center items-center hover:cursor-pointer" href="./index.php">
-                <img src="./src/images/home.svg" alt="">
-            </a>
             <a class="w-auto h-[40px] flex items-center hover:cursor-pointer px-10 bg-primary-surface rounded-full font-poppins font-normal text-sm text-black" href="./input_data_alternatif.php">Kembali</a>
             <a class="w-auto h-[40px] flex items-center hover:cursor-pointer px-10 bg-primary-main rounded-full font-poppins font-normal text-sm text-white" href="./hasil_akhir.php">Selesai</a>
         </div>

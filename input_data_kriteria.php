@@ -15,7 +15,7 @@
                 <div class="w-full h-10 flex gap-3">
                     <div class="w-[1108px] h-full bg-primary-surface rounded-[20px] flex items-center px-6">
                         <p href="" class="font-poppins font-normal text-sm text-primary-main">
-                            <a href="./index.php">Home</a>
+                            <a href="./sequence.php">Home</a>
                             <span class="font-poppins font-normal text-sm text-black">/</span>
                             <a href="./sequence.php">Langkah</a>
                             <span class="font-poppins font-normal text-sm text-black">/</span>
@@ -33,22 +33,22 @@
                         <form class="h-auto flex gap-8 items-center" action="./database/insert_kriteria.php">
                             <div class="flex items-center gap-5">
                                 <p class="w-auto h-6 font-poppins font-normal text-base text-black">Masukkan Kriteria</p>
-                                <input name="nama_kriteria" type="text" class="w-[220px] h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
+                                <input required name="nama_kriteria" type="text" class="w-[220px] h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
                             </div>
                             <div class="flex items-center gap-5">
                                 <p class="w-auto h-6 font-poppins font-normal text-base text-black">Kode Kriteria</p>
-                                <input name="kode_kriteria" type="text" class="w-20 h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
+                                <input required name="kode_kriteria" type="text" class="w-20 h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
                             </div>
                             <div class="flex items-center gap-5">
                                 <p class="w-auto h-6 font-poppins font-normal text-base text-black">Cost/Benefit</p>
-                                <select name="costOrBenefit" id="costOrBenefit" class="w-25 h-10 hover:cursor-pointer px-3 border border-zinc-400 rounded-lg">
+                                <select required name="costOrBenefit" id="costOrBenefit" class="w-25 h-10 hover:cursor-pointer px-3 border border-zinc-400 rounded-lg">
                                     <option value="C" class="font-poppins font-normal text-base text-black">Cost</option>
                                     <option value="B" class="font-poppins font-normal text-base text-black">Benefit</option>
                                 </select>
                             </div>
                             <div class="flex items-center gap-5">
                                 <p class="w-auto h-6 font-poppins font-normal text-base text-black">Nilai Bobot</p>
-                                <input name="nilai_bobot" type="text" class="w-20 h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
+                                <input required name="nilai_bobot" type="text" class="w-20 h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
                             </div>
                             <input type="submit" value="Add" class="h-10 w-20 flex justify-center hover:cursor-pointer rounded-[20px] bg-primary-main font-poppins font-semibold text-white">
                         </form>
@@ -90,9 +90,6 @@
                 </div>
 
                 <div class="w-full h-20 flex justify-end py-5 gap-5">
-                    <a class="w-auto h-full bg-primary-border rounded-[20px] flex justify-center items-center hover:cursor-pointer" href="./index.php">
-                        <img src="./src/images/home.svg" alt="">
-                    </a>
                     <a class="w-[100px] h-full bg-primary-surface rounded-[20px] flex justify-center items-center hover:cursor-pointer" href="./sequence.php">
                         <p class="font-poppins text-base font-normal">Kembali</p>
                     </a>

@@ -18,7 +18,7 @@
                 <div class="w-auto h-10 flex gap-3">
                     <div class="w-[1108px] h-full bg-primary-surface rounded-[20px] flex items-center px-6">
                         <p href="" class="font-poppins font-normal text-sm text-primary-main">
-                            <a href="./index.php">Home</a>
+                            <a href="./sequence.php">Home</a>
                             <span class="font-poppins font-normal text-sm text-black">/</span>
                             <a href="./sequence.php">Langkah</a>
                             <span class="font-poppins font-normal text-sm text-black">/</span>
@@ -39,7 +39,7 @@
                                     $data_kriteria = mysqli_query($koneksi,"SELECT * FROM kriteria");
                                     while ($kriteria = mysqli_fetch_array($data_kriteria)) {
                                 ?>
-                                <div class="w-20 flex justify-center font-poppins fonr"><?php echo $kriteria['nama_kriteria']?></div>
+                                <div class="w-20 flex justify-center font-poppins fonr"><?php echo $kriteria['kode_kriteria']?></div>
                                 <?php
                                     }
                                 ?>
@@ -49,14 +49,14 @@
                                 <div class="flex gap-5 items-center">
                                     <div class="flex items-center gap-5">
                                         <p class="w-auto h-6 font-poppins font-normal text-base text-black">Masukkan Alternatif</p>
-                                        <input name="nama_alternatif" type="text" class="w-[220px] h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
+                                        <input required name="nama_alternatif" type="text" class="w-[220px] h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
                                     </div>
                                     <?php 
                                         $data_kriteria = mysqli_query($koneksi,"SELECT * FROM kriteria");
                                         while ($kriteria = mysqli_fetch_array($data_kriteria)) {
                                     ?>
                                     <div class="flex items-center gap-5">
-                                        <input name="nilai_<?php echo $kriteria['id_kriteria']?>" type="text" class="w-20 h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
+                                        <input required name="nilai_<?php echo $kriteria['id_kriteria']?>" type="text" class="w-20 h-10 px-3 font-poppins font-normal text-base text-black border border-zinc-400 rounded-lg">
                                     </div>
                                     <?php
                                         }
@@ -123,9 +123,6 @@
                 </div>
 
                 <div class="w-full h-20 flex justify-end py-5 gap-5">
-                    <a class="w-auto h-full bg-primary-border rounded-[20px] flex justify-center items-center hover:cursor-pointer" href="./index.php">
-                        <img src="./src/images/home.svg" alt="">
-                    </a>
                     <a class="w-[100px] h-full bg-primary-surface rounded-[20px] flex justify-center items-center hover:cursor-pointer" href="./input_data_kriteria.php">
                         <p class="font-poppins text-base font-normal">Kembali</p>
                     </a>
