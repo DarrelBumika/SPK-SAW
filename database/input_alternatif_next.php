@@ -5,6 +5,6 @@
     if(mysqli_num_rows($data_kriteria) != 0) {
         header("Location: ../hasil_perhitungan.php");
     } else {
-        header("Location: ../input_data_alternatif.php");
+        header("Location: ../input_data_alternatif.php?submit_status=failed");
     }
 ?>

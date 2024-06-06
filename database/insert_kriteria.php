@@ -20,8 +20,8 @@
 
     if($allowed) {
         mysqli_query($koneksi, "INSERT INTO kriteria (nama_kriteria, kode_kriteria, cost_benefit, bobot_kriteria) VALUE ('$nama_kriteria', '$kode_kriteria', '$costOrBenefit', '$nilai_bobot')");
-        header("location: ../input_data_kriteria.php");
+        header("location: ../input_data_kriteria.php??insert_status=succeed");
     } else {
-        header("location: ../input_data_kriteria.php");
+        header("location: ../input_data_kriteria.php??insert_status=failed");
     }
 ?>

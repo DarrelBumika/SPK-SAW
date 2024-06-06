@@ -7,6 +7,6 @@
     if(mysqli_num_rows($data_kriteria) != 0 && mysqli_fetch_array($data_bobot)['total_bobot'] == 1) {
         header("Location: ../input_data_alternatif.php");
     } else {
-        header("Location: ../input_data_kriteria.php");
+        header("Location: ../input_data_kriteria.php?submit_status=failed");
     }
 ?>

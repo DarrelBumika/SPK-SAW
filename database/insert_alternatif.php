@@ -24,8 +24,8 @@
             mysqli_query($koneksi, "INSERT INTO alternatif_kriteria (id_alternatif, id_kriteria, data) VALUE (".$last_id.", ".$kriteria['id_kriteria'].", $value)");
         }
 
-        header("location: ../input_data_alternatif.php");
+        header("location: ../input_data_alternatif.php?insert_status=succeed");
     } else {
-        header("location: ../input_data_alternatif.php");
+        header("location: ../input_data_alternatif.php?insert_status=failed");
     }
 ?>
